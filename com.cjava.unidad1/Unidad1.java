@@ -1,10 +1,15 @@
+package com.cjava.unidad1;
+import com.cjava.unidad1.extras;
+
 /*
     File name should be  equals to  Name of the class  (public). 
 */
 
 public class Unidad1{
     public static void main(String args[]){
-    System.out.println("Hola Mundo");
+
+        Unidad1Extra extra  = new Unidad1Extra();
+        System.out.println("Hola Mundo - " + extra.getStringFromUnidad1Extra() );
     }
 
 }
@@ -14,6 +19,9 @@ public class Unidad1{
 */
 class Extra{
 
+public String unMetodo(){
+    return "Hola Desde Clase extra";
+}
 }
 
 /*   DON`T COMPILE
